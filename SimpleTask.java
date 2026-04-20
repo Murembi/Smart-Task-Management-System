@@ -19,5 +19,10 @@ public final class SimpleTask extends Task implements Prioritizable {
         return priority;
     }
 
+    @Override
+    public String toString() {
+        return "SimpleTask{ID=" + getId() + ", Title='" + getTitle() + "', Priority=" + priority + "}";
+    }
+
 }
 

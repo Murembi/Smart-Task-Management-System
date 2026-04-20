@@ -22,4 +22,9 @@ public final class ScheduleTask extends Task implements Prioritizable {
     return scheduleTime;
 }
 
+    @Override
+    public String toString() {
+        return "ScheduleTask{ID=" + getId() + ", Title='" + getTitle() + "', ScheduleTime='" + scheduleTime + "', Priority=" + getPriorityLevel() + "}";
+    }
+
 }
